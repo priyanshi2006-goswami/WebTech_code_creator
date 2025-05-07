@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function show() {
+			
+			var a = parseInt(document.getElementById("inputA").value);
+			var b = parseInt(document.getElementById("inputB").value);			
+			var product = a * b;
+
+			alert("Product of a and b is: " + product);
+		}
+	</script>
+</head>
+<body>
+	<br>
+	<!-- Input fields for user to enter values -->
+	<label for="inputA">Enter the first number (a): </label>
+	<input type="text" id="inputA"><br><br>
+
+	<label for="inputB">Enter the second number (b): </label>
+	<input type="text" id="inputB"><br><br>
+
+	<!-- Button to trigger the calculation -->
+	<input type="submit" style="height:80px; border-color:red; border-radius:10px; font-family: cursive;" value="Get Product" onclick="show();">
+</body>
+</html>

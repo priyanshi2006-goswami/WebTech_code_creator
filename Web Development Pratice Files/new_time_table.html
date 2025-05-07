@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+</head>
+<style>
+	h1 {
+	  color:#c00;
+	  font-family:sans-serif;
+	  font-size:2em;
+	  margin-bottom:0;
+	}
+
+	table {  
+	  font-family:sans-serif;
+	  th, td {
+		padding:.25em .5em;
+		text-align:left;
+		&:nth-child(2) {
+		  text-align:right;
+		}
+	  }
+	  td {
+		background-color:	;    
+	  }
+	  th {
+		background-color:#009;
+		color:#fff;
+	  }
+	}
+
+	.zigzag {
+	  border-collapse:separate;
+	  border-spacing:.25em 1em;
+	  tbody tr:nth-child(odd) {
+		transform:rotate(2deg);
+	  }
+	  thead tr,
+	  tbody tr:nth-child(even) {
+		transform:rotate(-2deg);
+	  }
+	}
+</style>
+<body>
+
+    <table border="1">
+       
+        <tr>
+            <th style="background-color:#D3D3D3;">TIME</th>
+            <th style="background-color:#D3D3D3;">Particular</th>
+            <th style="background-color:#D3D3D3;">MONDAY</th>
+            <th style="background-color:#D3D3D3;">TUESDAY</th>
+            <th style="background-color:#D3D3D3;">WEDNESDAY</th>
+            <th style="background-color:#D3D3D3;">THURSDAY</th>
+            <th style="background-color:#D3D3D3;">FRIDAY</th>
+            <th style="background-color:#D3D3D3;">SATURDAY</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">10:00 TO 11:00</td>
+            <td style="background-color:#D3D3D3;">Course Code</td>
+            <td style="background-color:#D3D3D3;">CS154</td>
+            <td style="background-color:#D3D3D3;"></td>
+            <td rowspan="2">ENG209-Batch A2 </td>
+            <td rowspan="2">CS154</td>
+            <td rowspan="2">CS154</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faculty Name</td>
+            <td>SS</td>
+            <td></td>
+            <td></td>
+            <td>SS</td>
+        </tr>
+		<tr>
+            <td>Room Number</td>
+            <td>511</td>
+            <td></td>
+            <td></td>
+            <td>SS</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">11:00 TO 12:00</td>
+            <td style="background-color:#D3D3D3;">Course Code</td>
+            <td>CS193</td>
+            <td></td>
+            <td></td>
+            <td rowspan="2">CS154</td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faculty Name</td>
+            <td>SV</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+            <td>Room Number</td>
+            <td>511</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">12:00 TO 13:00</td>
+            <td style="background-color:#D3D3D3;">Course Code</td>
+            <td>CS157</td>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faculty Name</td>
+            <td>YC</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+            <td>Room Number</td>
+            <td>511</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        
+        <tr>
+            <td colspan="8" style="background-color: #D3D3D3;">LUNCH BREAK</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">14:00 TO 15:00</td>
+            <td 	="background-color:#D3D3D3;">Course Code</td>
+            <td>CS194 - Batch A1</td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2">ENG207</td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faculty Name</td>
+            <td>SV</td>
+            <td></td>
+        </tr>
+		<tr>
+            <td>Room Number</td>
+            <td>303</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">15:00 TO 16:00</td>
+            <td style="background-color:#D3D3D3;">Course Code</td>
+            <td>CS158 - Batch A2</td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2">ENG209</td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faculty Name</td>
+            <td>SP</td>
+            <td></td>
+        </tr>
+		<tr>
+            <td>Room Number</td>
+            <td>505</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">16:00 TO 17:00</td>
+            <td style="background-color:#D3D3D3;">Course Code</td>
+            <td>ENG207</td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Faculty Name</td>
+            <td>UP</td>
+            <td></td>
+        </tr>
+		<tr>
+            <td>Room Number</td>
+            <td>501</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br>
+
+    
+    <table border="1">
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name (Short Name also)</th>
+            <th>(L-T-P-C)</th>
+            <th>Names Of Faculty (Short Form also)</th>
+        </tr>
+        <tr>
+            <td>CS193</td>
+            <td>Problem Solving using Python (PSPY)</td>
+            <td>(2-0-0-2)</td>
+            <td>Dr. S K Vij (SV)</td>
+        </tr>
+        <tr>
+            <td>CS194</td>
+            <td>Problem Solving using Python Laboratory (PSPY LAB)</td>
+            <td>(0-0-4-2)</td>
+            <td>Dr. S K Vij (SV), Mr. Samir Pathan (SP)</td>
+        </tr>
+        <tr>
+            <td>CS154</td>
+            <td>Engineering Mathematics - II (EM)</td>
+            <td>(3-0-0-3)</td>
+            <td>Dr. Sheetal Shende (SS)</td>
+        </tr>
+        <tr>
+            <td>CS157</td>
+            <td>Web Technology (CS157)</td>
+            <td>(2-0-0-2)</td>
+            <td>Prof. Yogesh Chaudhari (YC)</td>
+        </tr>
+        <tr>
+            <td>CS158</td>
+            <td>Web Technology Laboratory (CS158)</td>
+            <td>(0-0-4-2)</td>
+            <td>Mr. Samir Pathan (SP)</td>
+        </tr>
+        <tr>
+            <td>ENG207</td>
+            <td>Digital Logic Design (DLD)</td>
+            <td>(2-0-0-2)</td>
+            <td>Prof. Ujjwala Petigara (UP)</td>
+        </tr>
+        <tr>
+            <td>ENG208</td>
+            <td>Digital Logic Design Laboratory (DLD LAB)</td>
+            <td>(0-0-2-1)</td>
+            <td>Prof. Ujjwala Petigara (UP)</td>
+        </tr>
+        <tr>
+            <td>ENG209</td>
+            <td>Engineering Graphics (EG)</td>
+            <td>(1-0-2-2)</td>
+            <td>Dr. Viren Parikh (VP)</td>
+        </tr>
+    </table>
+
+    <br>
+
+   
+    <table>
+        <tr>
+            <th>Person</th>
+            <th>Name</th>
+            <th>Signature</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Program Chair</td>
+            <td>Prof. Ninad Bhavsar</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>School Head</td>
+            <td>Dr. Ashish Jani</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
